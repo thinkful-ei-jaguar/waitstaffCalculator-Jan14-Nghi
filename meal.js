@@ -1,4 +1,5 @@
 import charges from './charges.js';
+import earnings from './earnings.js';
 
 let subtotal;
 let tips;
@@ -7,6 +8,8 @@ function calculate(base, tax, tip) {
   // Calculates subtotal and total
   subtotal = (base * (1 + ( tax / 100 ))).toFixed(2);
   tips = (base * ( tip / 100 )).toFixed(2); 
+  charges.render(subtotal, tips);
+  earnings.render(parseFloat(tips));
 }
 
 function submit(e) {
@@ -17,7 +20,6 @@ function submit(e) {
   const tip = $('#tip').val();
   calculate(base, tax, tip);
   e.target.reset();
-  charges.render(subtotal, tips);
 }
   
 function submitEventListener() {
