@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+h1 {
+    text-align: center;
+    font-size: 4em;
+}
+
+#root {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h2 {
+    margin-left: 2vw;
+}
+
+.content {
+    padding-top: 2vh;
+    padding-left: 2vw;
+    padding-bottom: 2vh;
+    border-top: 2px solid black;
+}
+
+.left-content {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    border: 2px solid black;
+    width: 35vw;
+}
+
+#earnings {
+    margin-top: 5vh;
+}
+
+label, input, p {
+    margin-top: 2vh;
+}
+
+button {
+    margin-top: 7vh;
+    font-size: 17px;
+    width: 6vw;
+    box-shadow: 2px 2px;
+}
+
+#reset {
+    position: fixed;
+    right: 6vw;
+    bottom: 15vh;
+}
